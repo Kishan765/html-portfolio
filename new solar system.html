@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div class="solar-system">
+            <div class="sun"></div>
+            <div class="planet mercury"></div>
+            <div class="planet venus"></div>
+            <div class="planet earth"></div>
+            <div class="planet mars"></div>
+          </div>
+          <style>
+                .solar-system {
+                width: 800px;
+                height: 800px;
+                position: relative;
+                margin: 30px auto;
+                border-radius: 100%;
+                background-color: #000;
+                overflow: hidden;
+                }
+                /* create the sun */
+                .sun {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -100px 0 0 -100px;
+                border-radius: 50%;
+                background-color: #fdd835;
+                box-shadow: 0 0 50px #fdd835;
+                }
+                /* create the planets */
+                .planet {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -15px;
+                margin-left: -15px;
+                border-radius: 50%;
+                }
+                .mercury {
+                background-color: #b3b3b3;
+                animation: orbit-mercury 7s linear infinite;
+                }
+
+                .venus {
+                background-color: #ff8a65;
+                animation: orbit-venus 12s linear infinite;
+                }
+
+                .earth {
+                background-color: #4fc3f7;
+                animation: orbit-earth 20s linear infinite;
+                }
+                .mars {
+                background-color: #ff3d00;
+                animation: orbit-mars 30s linear infinite;
+                }
+
+                /* define the planet orbits */
+                @keyframes orbit-mercury {
+                from {
+                    transform: rotate(0deg) translateX(80px) rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg) translateX(80px) rotate(-360deg);
+                }
+                }
+
+                @keyframes orbit-venus {
+                from { transform: rotate(0deg) translateX(140px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(140px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-earth {
+  from {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-mars {
+  from {
+    transform: rotate(0deg) translateX(260px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(260px) rotate(-360deg);
+  }
+}
+
+
+
+
+
+          </style>
+          
+          
+
+
+
+    </head>
+</html>

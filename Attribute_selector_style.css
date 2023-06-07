@@ -1,0 +1,15 @@
+/* Here we will learn attribute styling ex. input,accker tab styling etc */
+/* suppose input styling first*/
+input[type=text]{color: #ff0000;
+background-color: beige;}
+input[type=password]{color: blue;
+background-color: rgb(243, 231, 215);}
+
+/* wo href jo http se start ho rha, uska color green krna h*/
+a[href ^='https']{
+    color: green;
+}
+
+/* similarily, jo bhi href .com se finish ho rha uska colour pink karna h*/
+
+a[href $=".com"]{color:magenta;}
